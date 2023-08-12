@@ -1,6 +1,7 @@
 // var apiKey: 'be8e0248d5c480564f7b163365324150'
 
 var searchBtn = document.querySelector('#searchBtn');
+var asideSection = document.querySelector('#aside-section');
 
 // API call function
 
@@ -32,7 +33,10 @@ function getApi() {
             console.log('error fetching data', error)
         })
 
-        
+        var historyBtn = document.createElement('button');
+        historyBtn.classList.add('history-btn');
+        historyBtn.textContent = cityInput;
+        asideSection.appendChild(historyBtn);
 };
 
 searchBtn.addEventListener('click', getApi);

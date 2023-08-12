@@ -43,3 +43,20 @@ header{
     margin-top: 5px;
     margin-left: 10px;
 }
+
+.history-btn {
+    background-color: black;
+    color: rgb(133, 147, 207);
+    font-family: 'Jost';
+    font-weight: bolder;
+    width: 175px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.history-btn:hover{
+    background-color: rgb(133, 147, 207);
+    color: black;
+}
