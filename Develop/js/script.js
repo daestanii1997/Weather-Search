@@ -37,6 +37,9 @@ function getApi() {
         historyBtn.classList.add('history-btn');
         historyBtn.textContent = cityInput;
         asideSection.appendChild(historyBtn);
+
+        localStorage.setItem(historyBtn, cityInput);
+        historyBtn.value = localStorage.getItem('cityInput');
 };
 
 searchBtn.addEventListener('click', getApi);
