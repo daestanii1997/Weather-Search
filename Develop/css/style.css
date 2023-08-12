@@ -1,8 +1,45 @@
+* {
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(48, 48, 122);
+    height: 75px;
+}
+
 #title {
-    background-color: blue;
-    background-size: cover;
     color: whitesmoke;
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
-    height: 50px;
+    padding-top: 10px;
+    font-family: 'Jost';
+}
+
+#search-title {
+    font-family: 'Jost';
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.search{
+    background-color: rgb(133, 147, 207);
+    color: black;
+    font-family: 'Jost';
+    font-weight: bolder;
+    width: 175px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.search:hover{
+    background-color: black;
+    color: rgb(133, 147, 207);
+}
+
+.city-input {
+    height: 18px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
