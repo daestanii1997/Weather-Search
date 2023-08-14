@@ -16,8 +16,8 @@
     </header>
     <aside id="aside-section">
         <h1 id="search-title">Search for a City:</h1>
-        <input class="city-input" placeholder="Salt Lake City">
-        <button id="searchBtn" class="search">Search</button>
+        <input id="myInput" class="city-input" onfocus="this.value=''" value="" placeholder="Salt Lake City">
+        <button id="searchBtn" class="search" onclick="document.getElementById('myInput').value">Search</button>
     </aside>
     <main>
         <!-- put search results here -->
