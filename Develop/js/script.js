@@ -30,9 +30,6 @@ function getApi() {
 
             // weather URL to apply lat and long to get results
 
-            console.log(data[0].lat)
-            console.log(data[0].lon)
-
             var weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=' + data[0].lat + '&lon=' + data[0].lon + '&units=imperial&limit=5&appid=be8e0248d5c480564f7b163365324150';
 
             fetch(weatherUrl)
@@ -41,12 +38,14 @@ function getApi() {
                 })
                 .then(function (data) {
                     console.log('weather:', data);
+                    let weatherIcon = data.weather[0].icon
 
                     tempDisplay.textContent = data.main.temp + ' °F';
                     description.textContent = data.weather[0].description;
                     cityDisplay.textContent = data.name;
                     // dateContainer.textContent = dayjs().format(MMM,D);
-                    iconDisplay.textContent = data.weather[0].icon;
+                    iconDisplay.setAttribute("src", "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png");
+                    console.log(data.weather[0].icon);
                     humidity.textContent = "Humidity: " + data.main.humidity;
                     windSpeed.textContent = "Wind Speed: " + data.wind.speed;
                 });

@@ -67,6 +67,11 @@ header{
     margin-top: 5px;
 }
 
+.icon{
+    display: block;
+    width: 10%;
+}
+
 .windSpeed {
     /* display:flexbox; */
     padding-left: 165px;
