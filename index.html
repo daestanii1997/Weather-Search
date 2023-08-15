@@ -19,8 +19,15 @@
         <input id="myInput" class="city-input" onfocus="this.value=''" value="" placeholder="Salt Lake City">
         <button id="searchBtn" class="search" onclick="document.getElementById('myInput').value">Search</button>
     </aside>
-    <main>
+    <main id="display">
         <!-- put search results here -->
+        <h2 class="cityName"></h2>
+        <p class="dateContainer"></p>
+        <img class="icon">
+        <p class="description"></p>
+        <h2 class="tempDisplay"></h2>
+        <p class="humidity"></p>
+        <p class="windSpeed"></p>
     </main>
 
     <script src="./Develop/js/script.js"></script>

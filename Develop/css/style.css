@@ -60,3 +60,19 @@ header{
     background-color: rgb(133, 147, 207);
     color: black;
 }
+
+.tempDisplay, .description, .cityName, .humidity, .windSpeed{
+    font-family: 'Jost';
+    text-align: center;
+    margin-top: 5px;
+}
+
+.windSpeed {
+    /* display:flexbox; */
+    padding-left: 165px;
+    
+}
+
+aside{
+    float: left;
+}
