@@ -61,7 +61,7 @@ header{
     color: black;
 }
 
-.tempDisplay, .description, .cityName, .humidity, .windSpeed{
+.tempDisplay, .description, .cityName, .humidity, .windSpeed, .dateContainer{
     font-family: 'Jost';
     text-align: center;
     margin-top: 5px;
@@ -70,11 +70,13 @@ header{
 .icon{
     display: block;
     width: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.windSpeed {
+.windSpeed, .humidity, .tempDisplay, .description {
     /* display:flexbox; */
-    padding-left: 165px;
+    padding-left: 184px;
     
 }
 

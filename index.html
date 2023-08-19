@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather Search</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Develop/css/style.css" />
 </head>
 
@@ -21,13 +23,19 @@
     </aside>
     <main id="display">
         <!-- put search results here -->
-        <h2 class="cityName"></h2>
-        <p class="dateContainer"></p>
-        <img class="icon">
-        <p class="description"></p>
-        <h2 class="tempDisplay"></h2>
-        <p class="humidity"></p>
-        <p class="windSpeed"></p>
+        <div class="infoDisplay">
+            <h2 class="cityName"></h2>
+            <p class="dateContainer"></p>
+            <img class="icon">
+            <p class="description"></p>
+            <h2 class="tempDisplay"></h2>
+            <p class="humidity"></p>
+            <p class="windSpeed"></p>
+        </div>
+        <div id="fiveDayForcast">
+            
+        </div>
+        <hr>
     </main>
 
     <script src="./Develop/js/script.js"></script>
