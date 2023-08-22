@@ -61,7 +61,7 @@ header{
     color: black;
 }
 
-.tempDisplay, .description, .cityName, .humidity, .windSpeed, .dateContainer{
+#fiveDayForcast, .tempDisplay, .description, .cityName, .humidity, .windSpeed, .dateContainer{
     font-family: 'Jost';
     text-align: center;
     margin-top: 5px;
@@ -82,4 +82,26 @@ header{
 
 aside{
     float: left;
+}
+
+#fiveDayForcast{
+    display: flex;
+    flex-direction: row;
+}
+
+.fiveDayFormat{
+    width: 20%;
+    text-align: center;
+    align-content: center;
+}
+
+.dayContainer{
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+    width: 20%;
+}
+
+.infoDisplay{
+    margin-bottom: 35px;
 }
