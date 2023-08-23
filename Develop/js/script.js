@@ -20,7 +20,7 @@ function getApi() {
 
     // Geocode Url to get lat and long
 
-    var geoCodeUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=5&appid=' + apiKey;
+    var geoCodeUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=5&appid=' + apiKey;
 
     fetch(geoCodeUrl)
         .then(function (response) {
